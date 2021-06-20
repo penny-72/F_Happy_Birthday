@@ -1,0 +1,117 @@
+h2,p,h4,h3{font-family:"微軟正黑體",Microsoft JhengHei;
+	color:#FFF7FB}
+			
+			#header{background-color:black;
+				height:100px;
+				text-align:center;
+				font-family:"微軟正黑體",Microsoft JhengHei;
+				padding:6px;
+				box-sizing: border-box}
+			#righter{float:left;
+				background-color:#003060;
+				height:900px;
+				width:25%;
+				padding:16px;
+				box-sizing: border-box}
+			#center{float:right;
+				background-color:rgb(25, 25, 112,0.3);
+				height:900px;
+				width:75%;
+				padding:16px;
+				box-sizing: border-box}
+
+.title{font-family:"微軟正黑體",Microsoft JhengHei;
+	color:pink;
+	font-size: 22px;}
+
+ul {/* 取消ul預設的內縮及樣式 */
+	margin-left:50px;
+	padding:20px;
+	text-align:center;  /*文字置中*/
+	list-style:none; /*移除項目符號*/
+}
+
+ul.link-button{
+	border: 0px solid;
+	display:inline-block;
+	position:relative;
+	font-family:'微軟正黑體',Microsoft JhengHei;
+	font-size:30px;
+	font-weight:bold;
+	list-style:none; /*移除項目符號*/
+}
+
+
+ul.link-button li{
+	float:left;/*只有第一層是靠左對齊*/
+	border-radius:8px;/*四個圓角設計*/
+}
+
+ul.link-button a:hover{/*滑鼠滑入按鈕變色*/
+	background-color:#B87070;
+	color:#FFFFFF;
+	font-weight: bold;
+	border-radius:8px;/*四個圓角設計*/
+}
+
+li {
+    padding:15px;
+}
+
+td.block-button_2 a{ /*表格欄td內的專區按鈕*/
+	border-radius:4px;/*四個圓角設計*/
+	margin-left:5px;
+	margin-right:5px;
+	background-color:#E9E9E9;
+	color:#750000;
+	font-weight:bold;
+	display:block;
+	position:relative;
+	width:130px;
+	font-family:"微軟正黑體",Microsoft JhengHei;
+	font-size:22px;
+	padding:10px;
+	opacity:0.8;/*設計透明度 0-1之間的小數值*/
+	text-decoration:none;
+	text-align: center;
+	line-height:30px; 
+}
+
+td.block-button_2 a:hover{/*畢業生區滑入按鈕變色*/
+	border-radius:8px;/*四個圓角設計*/
+	background-color:#B87070;
+	color:#FFFFFF;
+	opacity:0.9;/*設計透明度 0-1之間的小數值*/
+	font-weight:bold;
+}
+
+a.block-button_3{ /*表格欄td內的專區按鈕*/
+	border-radius:5px;/*四個圓角設計*/
+	margin-left:5px;
+	margin-right:5px;
+	background-color:#E9E9E9;
+	color:#750000;
+	font-weight:bold;
+	display:block;
+	position:relative;
+	
+	font-family:"微軟正黑體",Microsoft JhengHei;
+	font-size:18px;
+	padding:5px;
+	opacity:0.8;/*設計透明度 0-1之間的小數值*/
+	text-decoration:none;
+	text-align: center;
+	line-height:30px;
+}
+
+a.block-button_3:hover{/*畢業生區滑入按鈕變色*/
+	border-radius:8px;/*四個圓角設計*/
+	background-color:#B87070;
+	color:#FFFFFF;
+	opacity:0.9;/*設計透明度 0-1之間的小數值*/
+	font-weight:bold;
+}
+
+
+
+

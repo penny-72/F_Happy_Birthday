@@ -1,0 +1,215 @@
+h2,p,h4,h3,h5{font-family:"微軟正黑體",Microsoft JhengHei;
+	color:#FFF7FB;
+}
+
+body {
+	background-color: #003060;
+	background-position:center;
+	background-size:auto 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	margin-left:70px;
+	margin-right:70px;
+	color:#804040;
+	font-size:32px;
+}
+
+a{
+	text-decoration: none; /*移除超連結底線*/
+	color:inherit; /* 繼承原本顏色，移除超連結顏色*/
+	display:block; /*讓<a>填滿<li>*/
+}
+
+p.mytitle{
+	color:#804040;
+	font-size:32px;
+}
+
+p.mytext{
+	color:#778899;
+	font-size:26px;
+}
+
+ul {/* 取消ul預設的內縮及樣式 */
+	margin-left:50px;
+	padding:20px;
+	text-align:center;  /*文字置中*/
+	list-style:none; /*移除項目符號*/
+}
+
+ul.link-button{
+	border: 0px solid;
+	display:inline-block;
+	position:relative;
+	font-family:'微軟正黑體',Microsoft JhengHei;
+	font-size:30px;
+	font-weight:bold;
+	list-style:none; /*移除項目符號*/
+}
+
+
+ul.link-button li{
+	float:left;/*只有第一層是靠左對齊*/
+	border-radius:8px;/*四個圓角設計*/
+}
+
+ul.link-button a:hover{/*滑鼠滑入按鈕變色*/
+	background-color:#B87070;
+	color:#FFFFFF;
+	font-weight: bold;
+	border-radius:8px;/*四個圓角設計*/
+}
+
+li {
+    padding:15px;
+}
+
+td.block-button a{ /*表格欄td內的專區按鈕*/
+	border-radius:8px;/*四個圓角設計*/
+	margin-left:20px;
+	margin-right:20px;
+	background-color:#E9E9E9;
+	color:#750000;
+	font-weight:bold;
+	display:block;
+	position:relative;
+	width:200px;
+	font-family:"微軟正黑體",Microsoft JhengHei;
+	font-size:22px;
+	padding:10px;
+	opacity:0.6;/*設計透明度 0-1之間的小數值*/
+	text-decoration:none;
+	text-align: center;
+	line-height:100px;
+}
+
+td.block-button a:hover{/*畢業生區滑入按鈕變色*/
+	border-radius:8px;/*四個圓角設計*/
+	background-color:#B87070;
+	color:#FFFFFF;
+	opacity:0.9;/*設計透明度 0-1之間的小數值*/
+	font-weight:bold;
+}
+
+
+
+/*相片秀*/
+.slider_container {
+  margin: 30px auto;
+  width: 1200px;
+  height: 600px;
+  position: absolute; /* 暫時切換relative,fixed */
+  z-index: 0; /* 將圖片放入下層位置做背景的輪播 */
+  border: 0px solid;
+  border-color: #fff;
+  border-bottom-width: 100px;
+  background-color: #f5f5f5;
+  box-shadow: #666 0 0 5px;
+  box-sizing: content-box;
+}
+.slider_container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-animation: round 15s linear infinite;
+  animation: round 15s linear infinite;
+}
+.slider_container div img {
+  width: 1040px;
+  height: auto;
+  display: block;
+}
+@-webkit-keyframes round {
+  6.7% { /* 3張圖每張5秒輪播共15秒,100%除以15=每秒百分比,6.7%*第1秒=6.7% */
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+  }
+  26.8% { /* 100%除以15=6.7%，6.7%*第4秒=26.8% */
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 4秒靜止*/
+  }
+  33.5% { /* 100%除以15=6.7%，6.7%*第5秒=33.5% */
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 4-5秒淡出*/
+  }
+}
+@keyframes round {
+  6.7% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+  }
+  26.8% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 4秒靜止*/
+  }
+  33.5% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 4-5秒淡出*/
+  }
+}
+/*.slider_container div:nth-child(4) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}*/
+.slider_container div:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.slider_container div:nth-child(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.slider_container div:nth-child(1) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.rwd_slider_container_wrapper {
+  width: 1040px;
+  height: 580px;
+  max-width: 100%;
+  box-sizing: border-box;
+  box-shadow: #666 0 0 2px;
+  padding: 0px;
+  margin: 0 auto;
+}
+.rwd_slider_container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-bottom: calc(70% + 100px);
+}
+.rwd_slider_container .slider_container {
+  box-shadow: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+}
+.rwd_slider_container .slider_container div {
+  width: 100%;
+  line-height: 0;
+}
+.rwd_slider_container .slider_container span {
+  top: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
